@@ -1,0 +1,93 @@
+/* Project Card Styling */
+.client-testimonial-card-wrap {
+  border-radius: 20px;
+  border: 2px solid var(--color-border);
+  position: relative;
+  padding: 80px 40px 40px 40px;
+  overflow: hidden;
+}
+
+/* Base styles for all project cards */
+.project-card-bg-effect {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.project-card-bg-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.project-card-bg-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+/* Individual card background images */
+.project-card-1::before {
+  background-image: url('../images/logo/pr9.png');
+}
+
+.project-card-2::before {
+  background-image: url('../images/logo/pr8.png');
+}
+
+.project-card-3::before {
+  background-image: url('../images/logo/pr1.avif');
+}
+
+.project-card-4::before {
+  background-image: url('../images/logo/pr2.jpg');
+}
+
+.project-card-5::before {
+  background-image: url('../images/logo/pr3.jpg');
+}
+
+.project-card-6::before {
+  background-image: url('../images/logo/pr4.webp');
+}
+
+.project-card-7::before {
+  background-image: url('../images/logo/pr5.jpg');
+}
+
+.project-card-8::before {
+  background-image: url('../images/logo/pr6.jpg');
+}
+
+.project-card-9::before {
+  background-image: url('../images/logo/pr7.jpg');
+}
+
+/* Text styling */
+.client-testimonial-card-wrap .client-title,
+.client-testimonial-card-wrap .client-para {
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
+}
+
+.client-testimonial-card-wrap .client-title a {
+  color: var(--color-white);
+}
+
+.client-testimonial-card-wrap .client-title a:hover {
+  color: var(--color-primary);
+} 
