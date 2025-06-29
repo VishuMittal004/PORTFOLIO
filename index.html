@@ -2,6 +2,41 @@
 <html lang="en">
 
 <head>
+    <style>
+        @media (max-width: 991px) {
+            .header-content {
+                flex-wrap: wrap;
+                justify-content: space-between; /* Pushes logo to left, right-items to right */
+                align-items: center;
+                row-gap: 4px; /* Space between the top and bottom rows */
+            }
+
+            /* The assistant link container */
+            .header-content .main-menu-area {
+                order: 3; /* Places it at the end of the flex order */
+                flex-basis: 100%; /* Makes it take up the full width, forcing it to a new line */
+                justify-content: center; /* Center the link within its container */
+                display: flex;
+                margin-top: -15px; /* Use negative margin to pull the row up */
+            }
+
+            /* Ensure social icons are visible on mobile */
+            .social-share-wrapper {
+                display: block !important;
+            }
+
+            .ultron-icon {
+                display: none;
+            }
+
+            /* The right side of the header (social icons + theme toggle) */
+            .tmp-header-right {
+                display: flex;
+                align-items: center;
+                gap: 20px; /* Space between social icons and theme toggle */
+            }
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,13 +109,13 @@
                                 <img class="logo-white" src="assets/images/logo/logo-white.png" >
                             </a>
                         </div>
-                        <div class="main-menu-area d-none d-xl-block mx-auto">
+                        <div class="main-menu-area mx-auto">
                             <nav class="navigation">
                                 <ul class="mainmenu" style="list-style: none; padding: 0; margin: 0;">
                                     <li>
                                                                                 <a href="https://ultron-web-umber.vercel.app/" class="assistant-link tmp-link-animation" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
-                                            <img src="assets/images/logo/ult.png" alt="AI Assistant" style="height: 50px; border-radius: 50%;" class="tmp-scroll-trigger tmp-fade-in">
-                                            <span class="project-title-underline"><b>ULTRON - My Personal AI Assistant</b></span>
+                                            <img src="assets/images/logo/ult.png" alt="AI Assistant" style="height: 50px; border-radius: 50%;" class="tmp-scroll-trigger tmp-fade-in ultron-icon">
+                                            <span class="project-title-underline" style="color: white;"><b>ULTRON - My Personal AI Assistant</b></span>
                                         </a>
                                     </li>
                                 </ul>
