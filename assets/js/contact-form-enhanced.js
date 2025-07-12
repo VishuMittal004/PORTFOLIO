@@ -151,10 +151,10 @@
             };
 
             // Send main email to you
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_uobiro9', 'template_6rheieg', templateParams)
                 .then((response) => {
                     // Send auto-reply to user
-                    emailjs.send('YOUR_SERVICE_ID', 'YOUR_AUTOREPLY_TEMPLATE_ID', templateParams)
+                    emailjs.send('service_uobiro9', 'template_csab1hd', templateParams)
                         .then((autoReplyRes) => {
                             // Optionally log auto-reply success
                         }, (autoReplyErr) => {
