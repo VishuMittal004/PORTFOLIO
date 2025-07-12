@@ -153,13 +153,24 @@
             // Send main email to you
             emailjs.send('service_uobiro9', 'template_6rheieg', templateParams)
                 .then((response) => {
-                    // Send auto-reply to user
-                    emailjs.send('service_uobiro9', 'template_csab1hd', templateParams)
+                    // Send auto-reply to user (with user's email as recipient)
+                    const autoReplyParams = {
+                        to_email: templateParams.from_email,
+                        from_name: templateParams.from_name,
+                        from_email: templateParams.from_email,
+                        from_phone: templateParams.from_phone,
+                        subject: 'Thank you for contacting me - Vipanshu Mittal',
+                        message: templateParams.message
+                    };
+                    
+                    emailjs.send('service_uobiro9', 'template_csab1hd', autoReplyParams)
                         .then((autoReplyRes) => {
-                            // Optionally log auto-reply success
+                            // Auto-reply sent successfully
                         }, (autoReplyErr) => {
-                            // Optionally log auto-reply error
+                            // Auto-reply failed, but don't show error to user
+                            console.log('Auto-reply failed:', autoReplyErr);
                         });
+                    
                     this.showMessage('Thank you! Your message has been sent successfully. I will get back to you soon.', 'success');
                     this.form[0].reset();
                     this.form.find('input, textarea').removeClass('field-success field-error');
