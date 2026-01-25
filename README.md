@@ -67,4 +67,5 @@ inversweb.com/
 For any inquiries or collaboration opportunities, please reach out through the contact information provided on the website.
 
 ---
-*This portfolio website is designed and developed to showcase Vipanshu Mittal's professional work and skills in web development and design.* 
+
+*This portfolio website is designed and developed to showcase Vipanshu Mittal's professional work and skills in web development, software development, AI development and design.* 
