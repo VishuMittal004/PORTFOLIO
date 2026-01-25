@@ -6,18 +6,24 @@
         @media (max-width: 991px) {
             .header-content {
                 flex-wrap: wrap;
-                justify-content: space-between; /* Pushes logo to left, right-items to right */
+                justify-content: space-between;
+                /* Pushes logo to left, right-items to right */
                 align-items: center;
-                row-gap: 4px; /* Space between the top and bottom rows */
+                row-gap: 4px;
+                /* Space between the top and bottom rows */
             }
 
             /* The assistant link container */
             .header-content .main-menu-area {
-                order: 3; /* Places it at the end of the flex order */
-                flex-basis: 100%; /* Makes it take up the full width, forcing it to a new line */
-                justify-content: center; /* Center the link within its container */
+                order: 3;
+                /* Places it at the end of the flex order */
+                flex-basis: 100%;
+                /* Makes it take up the full width, forcing it to a new line */
+                justify-content: center;
+                /* Center the link within its container */
                 display: flex;
-                margin-top: -15px; /* Use negative margin to pull the row up */
+                margin-top: -15px;
+                /* Use negative margin to pull the row up */
             }
 
             /* Ensure social icons are visible on mobile */
@@ -33,7 +39,8 @@
             .tmp-header-right {
                 display: flex;
                 align-items: center;
-                gap: 20px; /* Space between social icons and theme toggle */
+                gap: 20px;
+                /* Space between social icons and theme toggle */
             }
         }
     </style>
@@ -47,7 +54,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap min css -->
     <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.css">
@@ -59,8 +68,10 @@
     <link rel="stylesheet" href="assets/css/project-cards.css">
     <style>
         .theme-toggle-btn:hover i::before {
-            content: "\f186" !important; /* Moon icon */
+            content: "\f186" !important;
+            /* Moon icon */
         }
+
         .project-nav-btn {
             width: 50px;
             height: 50px;
@@ -72,22 +83,28 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
+
         .project-nav-btn:hover {
             background: #000000;
         }
+
         .project-nav-btn::after {
             display: none;
         }
+
         .swiper-button-prev.project-nav-btn {
             left: 25px;
         }
+
         .swiper-button-next.project-nav-btn {
             right: 25px;
         }
+
         @media (max-width: 767px) {
             .swiper-button-prev.project-nav-btn {
                 left: 10px;
             }
+
             .swiper-button-next.project-nav-btn {
                 right: 10px;
             }
@@ -105,17 +122,22 @@
                     <div class="header-content">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="logo-dark" src="assets/images/logo/p1.png" >
-                                <img class="logo-white" src="assets/images/logo/logo-white.png" >
+                                <img class="logo-dark" src="assets/images/logo/p1.png">
+                                <img class="logo-white" src="assets/images/logo/logo-white.png">
                             </a>
                         </div>
                         <div class="main-menu-area mx-auto">
                             <nav class="navigation">
                                 <ul class="mainmenu" style="list-style: none; padding: 0; margin: 0;">
                                     <li>
-                                                                                <a href="https://ultron-web-umber.vercel.app/" class="assistant-link tmp-link-animation" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
-                                            <img src="assets/images/logo/ult.png" alt="AI Assistant" style="height: 50px; border-radius: 50%;" class="tmp-scroll-trigger tmp-fade-in ultron-icon">
-                                            <span class="project-title-underline" style="color: white;"><b>ULTRON - My Personal AI Assistant</b></span>
+                                        <a href="https://ultron-web-umber.vercel.app/"
+                                            class="assistant-link tmp-link-animation"
+                                            style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                                            <img src="assets/images/logo/ult.png" alt="AI Assistant"
+                                                style="height: 50px; border-radius: 50%;"
+                                                class="tmp-scroll-trigger tmp-fade-in ultron-icon">
+                                            <span class="project-title-underline" style="color: white;"><b>ULTRON - My
+                                                    Personal AI Assistant</b></span>
                                         </a>
                                     </li>
                                 </ul>
@@ -123,23 +145,32 @@
                         </div>
 
 
-                        
+
                         <div class="tmp-header-right">
                             <div class="social-share-wrapper d-none d-md-block">
                                 <div class="social-link">
-                                    <a href="https://drive.google.com/file/d/1uH555QB0l9nUzrSJdLMihtaFIT9xnujd/view" title="Resume"><i class="fa-solid fa-file-lines"></i></a>
-                                    <a href="https://www.instagram.com/_vipanshu_mittal/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/vipanshu-mittal-a65973334/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="https://x.com/VishuMitta29340" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://github.com/VishuMittal004" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://drive.google.com/file/d/1ijNzrXUGPQMiL1Ikf2AYTziKLoQyPWxV/view"
+                                        title="Resume"><i class="fa-solid fa-file-lines"></i></a>
+                                    <a href="https://www.instagram.com/_vipanshu_mittal/" title="Instagram"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/vipanshu-mittal-a65973334/" title="LinkedIn"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://leetcode.com/u/Vipanshu_Mittal/" title="LeetCode"><i
+                                            class="fa-solid fa-code"></i></a>
+                                    <a href="https://www.naukri.com/code360/profile/vishumittal" title="Code360"><i
+                                            class="fa-solid fa-laptop-code"></i></a>
+                                    <a href="https://github.com/VishuMittal004" title="GitHub"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="actions-area">
                                 <div class="tmp-side-collups-area d-none d-xl-block">
-                                    <a href="index-02-white.html" title="Switch to Light Mode" class="tmp-menu-bars theme-toggle-btn"><i class="fa-regular fa-moon"></i></a>
+                                    <a href="index-02-white.html" title="Switch to Light Mode"
+                                        class="tmp-menu-bars theme-toggle-btn"><i class="fa-regular fa-moon"></i></a>
                                 </div>
                                 <div class="tmp-side-collups-area d-block d-xl-none">
-                                    <a href="index-02-white.html" title="Switch to Light Mode" class="tmp-menu-bars theme-toggle-btn"><i class="fa-regular fa-moon"></i></a>
+                                    <a href="index-02-white.html" title="Switch to Light Mode"
+                                        class="tmp-menu-bars theme-toggle-btn"><i class="fa-regular fa-moon"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +189,8 @@
                     <div class="col-lg-6 order-lg-2">
                         <div class="banner-right-content">
                             <div class="main-img">
-                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="assets/images/banner/main1.png" alt="banner-img">
+                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1"
+                                    src="assets/images/banner/main1.png" alt="banner-img">
                                 <h2 class="banner-big-text-1 up-down-2">Developer</h2>
                                 <h2 class="banner-big-text-2 up-down">Developer</h2>
                                 <div class="benner-two-bg-red-img">
@@ -180,7 +212,7 @@
                         <div class="inner">
                             <span class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">I am</span>
                             <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                Vipanshu Mittal, a  <br>
+                                Vipanshu Mittal, a <br>
                                 <span class="header-caption">
                                     <span class="cd-headline clip is-full-width">
                                         <span class="cd-words-wrapper">
@@ -190,7 +222,7 @@
                                             <b class="is-hidden theme-gradient">A.I. Enthusiast.</b>
                                             <!-- <b class="is-hidden theme-gradient">Content Writer</b> -->
                                         </span>
-                                </span>
+                                    </span>
                                 </span>
                             </h1>
                             <!-- <p class="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3"> A personal
@@ -226,7 +258,10 @@
     <div class="about-content-area">
         <div class="container tmp-section-gap">
             <div class="text-para-doc-wrap">
-                <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in inv-title-animation-wrap animation-order-1">A <span>B.Tech</span> student passionate about           <span>full-stack, software development and AI.</span>I build smart, purposeful tech that blends logic with creativity.
+                <h2
+                    class="text-para-documents tmp-scroll-trigger tmp-fade-in inv-title-animation-wrap animation-order-1">
+                    A <span>B.Tech</span> student passionate about <span>full-stack, software development and
+                        AI.</span>I build smart, purposeful tech that blends logic with creativity.
                 </h2>
                 <div class="right-bg-text-para">
                     <img src="assets/images/banner/right-bg-text-para-doc.png" alt="">
@@ -239,7 +274,7 @@
     </div>
     <!-- tmp text para end -->
 
-    
+
 
 
     <section class="resume-section" id="resume-section">
@@ -252,22 +287,26 @@
 
                     <div class="resume-widget">
                         <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-1">
-                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024</div>
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024
+                            </div>
                             <h3 class="resume-title">Crash course on Python</h3>
                             <div class="institute">Google</div>
                         </div>
                         <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-2">
-                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024</div>
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024
+                            </div>
                             <h3 class="resume-title">Introduction to AI and ML</h3>
                             <div class="institute">Google</div>
                         </div>
                         <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-3">
-                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024</div>
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024
+                            </div>
                             <h3 class="resume-title">Generative AI for everyone</h3>
                             <div class="institute">Deep Learning</div>
                         </div>
                         <div class="resume-single mb--0 tmp-scroll-trigger tmp-fade-in animation-order-4">
-                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024</div>
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2024
+                            </div>
                             <h3 class="resume-title">AI for everyone</h3>
                             <div class="institute">Deep Learning</div>
                         </div>
@@ -318,67 +357,83 @@
                     <div class="progress-wrapper">
                         <div class="content">
                             <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                Development Skills <span><img src="assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+                                Development Skills <span><img src="assets/images/custom-line/custom-line.png"
+                                        alt="custom-line"></span>
                             </h2>
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     Data Structures & Algorithms</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 55%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">55%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
-                                    Software Development</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 65%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">65%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                                <h6 class="heading heading-h6">
-                                    Artificial Intelligence</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
+                                        data-wow-delay=".3s" role="progressbar"
+                                        style="width: 60%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                         <span class="percent-label">60%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
+                            <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
-                                    FullStack Development</h6>
+                                    Software Development</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">90%</span>
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
+                                        data-wow-delay=".3s" role="progressbar"
+                                        style="width: 65%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">65%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
-
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
-                                    Prompting</h6>
+                                    Artificial Intelligence</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 85%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay=".6s" role="progressbar"
+                                        style="width: 55%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">55%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    FullStack Development</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s"
+                                        data-wow-delay=".4s" role="progressbar"
+                                        style="width: 85%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span class="percent-label">85%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
 
-                            
-                            
+                            <!-- Start Single Progress Charts -->
+                            <!-- <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Prompting</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s"
+                                        data-wow-delay=".5s" role="progressbar"
+                                        style="width: 85%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">85%</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- End Single Progress Charts -->
+
+
+
 
                             <!-- Start Single Progress Charts -->
                             <!-- <div class="progress-charts">
@@ -392,7 +447,7 @@
                             </div> -->
                             <!-- End Single Progress Charts -->
 
-                            
+
 
                         </div>
                     </div>
@@ -401,26 +456,33 @@
                     <div class="progress-wrapper">
                         <div class="content">
                             <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                Languages <span><img src="assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+                                Languages <span><img src="assets/images/custom-line/custom-line.png"
+                                        alt="custom-line"></span>
                             </h2>
-                             <!-- Start Single Progress Charts -->
-                             <div class="progress-charts">
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     C/C++</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 96%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">96%</span>
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
+                                        data-wow-delay=".3s" role="progressbar"
+                                        style="width: 90%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">90%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
+                            <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     Python</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="percent-label">85%</span>
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
+                                        data-wow-delay=".3s" role="progressbar"
+                                        style="width: 70%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">70%</span>
                                     </div>
                                 </div>
                             </div>
@@ -431,36 +493,45 @@
                                 <h6 class="heading heading-h6">
                                     HTML/CSS/JavaScript</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s"
+                                        data-wow-delay=".4s" role="progressbar"
+                                        style="width: 90%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span class="percent-label">90%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
-                            
-                             <!-- Start Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     Next.js/Tailwind CSS/React</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 75%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
+                                        data-wow-delay=".3s" role="progressbar"
+                                        style="width: 75%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span class="percent-label">75%</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
+                            <!-- Start Single Progress Charts -->
+                            <!-- <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     Flutter</h6>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay=".6s" role="progressbar"
+                                        style="width: 60%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <span class="percent-label">60%</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- End Single Progress Charts -->
-                             <!-- Start Single Progress Charts -->
+                            <!-- Start Single Progress Charts -->
                             <!-- <div class="progress-charts">
                                 <h6 class="heading heading-h6">
                                     React</h6>
@@ -472,7 +543,7 @@
                             </div> -->
                             <!-- End Single Progress Charts -->
 
-                            
+
 
                         </div>
                     </div>
@@ -482,7 +553,7 @@
     </div>
     <!-- tmp skill area end -->
 
-    
+
 
     <!-- Tpm My Expertise Area start -->
     <section class="my-expertise-area tpm-custom-box-bg">
@@ -492,11 +563,15 @@
                     <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                         <span class="subtitle">My Expertise</span>
                     </div>
-                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">The Fields I Excel in 
-                         <br> and Aim for</h2>
+                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">The Fields I Excel
+                        in
+                        <br> and Aim for
+                    </h2>
                 </div>
                 <div class="discription-area tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    <p class="description color-primary-3rd"> Innovative and versatile developer with a solid foundation in software and web development. Skilled in building scalable systems and intuitive interfaces with precision and creativity.
+                    <p class="description color-primary-3rd"> Innovative and versatile developer with a strong
+                        foundation in software and web development, driven by analytical thinking and problem-solving.
+                        Skilled in building scalable systems and intuitive interfaces with precision and creativity.
 
 
                     </p>
@@ -509,16 +584,20 @@
                             <div class="expertise-card-logo">
                                 <img src="assets/images/my-expertise/logo-4.svg" alt="logo">
                             </div>
-                            <h3 class="title">Software Development</h3>
+                            <h3 class="title">Critical Thinking</h3>
                         </div>
-                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
-                            <svg class="radial-progress" data-countervalue="55" viewBox="0 0 80 80">
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up"
+                            data-sal-duration="1000">
+                            <svg class="radial-progress" data-countervalue="85" viewBox="0 0 80 80">
                                 <circle class="bar-static" cx="40" cy="40" r="35"></circle>
-                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
-                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">55%</text>
+                                <circle class="bar--animated" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
                             </svg>
                         </div>
-                        <p class="para">I develop scalable and efficient software systems with clean architecture, coding & solving real-world problems.</p>
+                        <p class="para">I apply analytical and critical thinking to break down complex challenges and
+                            design structured, efficient solutions.</p>
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -530,14 +609,18 @@
                             </div>
                             <h3 class="title">creativity</h3>
                         </div>
-                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up"
+                            data-sal-duration="1000">
                             <svg class="radial-progress" data-countervalue="95" viewBox="0 0 80 80">
                                 <circle class="bar-static" cx="40" cy="40" r="35"></circle>
-                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
-                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
+                                <circle class="bar--animated" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
                             </svg>
                         </div>
-                        <p class="para">I craft original, thoughtful solutions by blending imagination with intent, turning ideas into expressive creations.</p>
+                        <p class="para">I craft original, thoughtful solutions by blending imagination with intent,
+                            turning ideas into expressive creations.</p>
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -547,16 +630,20 @@
                             <div class="expertise-card-logo">
                                 <img src="assets/images/my-expertise/logo-6.svg" alt="logo">
                             </div>
-                            <h3 class="title">Web Development</h3>
+                            <h3 class="title">Problem Solving</h3>
                         </div>
-                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up"
+                            data-sal-duration="1000">
                             <svg class="radial-progress" data-countervalue="90" viewBox="0 0 80 80">
                                 <circle class="bar-static" cx="40" cy="40" r="35"></circle>
-                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
-                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                                <circle class="bar--animated" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
                             </svg>
                         </div>
-                        <p class="para">I design and build responsive, dynamic websites with robust functionality, ensuring performance, and user impact.</p>
+                        <p class="para">I bring a problem-solving mindset to build reliable systems and impactful
+                            solutions.</p>
                     </div>
                     <button class="service-link modal-popup"></button>
                 </div>
@@ -572,8 +659,11 @@
             <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                 <span class="subtitle">My Projects</span>
             </div>
-            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Crafting Digital Excellence Through</h2>
-            <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Explore my diverse portfolio showcasing innovative solutions and creative designs that bring ideas to life. Each project represents a unique challenge solved with expertise and passion.</p>
+            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Crafting Digital Excellence
+                Through</h2>
+            <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Explore my diverse
+                portfolio showcasing innovative solutions and creative designs that bring ideas to life. Each project
+                represents a unique challenge solved with expertise and passion.</p>
         </div>
         <div class="client-testimonial-swiper position-relative">
             <div class="swiper testimonial-swiper-v2">
@@ -586,12 +676,34 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 1">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/gigfloww_intern"><b>A Company Webapp</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/gigfloww_intern"><b>A Company
+                                                    Webapp</b></a></h3>
                                         <p class="client-para">Web Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Built a responsive dashboard web app to streamline company operations during an internship project.</p>
+                            <p class="client-para">Built a responsive dashboard web app to streamline company operations
+                                during an internship selection project.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-testimonial-card-wrap project-card-bg-effect project-card-11">
+                            <div class="client-card-head">
+                                <div class="client-info">
+                                    <!-- <div class="client-img">
+                                        <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 2">
+                                    </div> -->
+                                    <div class="client-details">
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/ULTRON-under-stabilization"><b>ULTRON
+                                                    AI Assistant</b></a></h3>
+                                        <p class="client-para">AI Assistant</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="client-para">An AI assistant that controls your computer on command, performing
+                                daily tasks like messaging, emailing, and automated workflows.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -602,14 +714,18 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 2">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/BARTR--Swap-Your-Skills"><b>BARTR-Swap Your Skills</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/BARTR--Swap-Your-Skills"><b>BARTR-Swap
+                                                    Your Skills</b></a></h3>
                                         <p class="client-para">Web Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Created a skills bartering platform where users trade expertise and services without using money.</p>
+                            <p class="client-para">Created a skills bartering platform where users trade expertise and
+                                services without using money.</p>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="client-testimonial-card-wrap project-card-bg-effect project-card-3">
                             <div class="client-card-head">
@@ -618,12 +734,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 3">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/Aero-Route"><b>Aero-Route</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/Aero-Route"><b>Aero-Route</b></a>
+                                        </h3>
                                         <p class="client-para">Software Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Designed AeroRoute, a tool to visualize and calculate optimal flight paths between global airports efficiently.</p>
+                            <p class="client-para">Designed AeroRoute, a tool to visualize and calculate optimal flight
+                                paths between global airports efficiently.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -634,12 +753,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 4">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/cloud_quill"><b>Cloud Quill</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/cloud_quill"><b>Cloud
+                                                    Quill</b></a></h3>
                                         <p class="client-para">Web Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Built CloudQuill, an online collaborative library platform for storing, sharing, and reading user-generated content.</p>
+                            <p class="client-para">Built CloudQuill, an online collaborative library platform for
+                                storing, sharing, and reading user-generated content.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -650,12 +772,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 5">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/GamingArcade"><b>Gaming Arcade</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/GamingArcade"><b>Gaming
+                                                    Arcade</b></a></h3>
                                         <p class="client-para">Software Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Built a terminal-based gaming arcade with classic games, focusing on logic, interactivity, and nostalgia.</p>
+                            <p class="client-para">Built a terminal-based gaming arcade with classic games, focusing on
+                                logic, interactivity, and nostalgia.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -666,12 +791,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 6">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/cinemate"><b>Cinemate</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/cinemate"><b>Cinemate</b></a>
+                                        </h3>
                                         <p class="client-para">Software Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Created a terminal-based movie recommendation system using content filtering for personalized suggestions.</p>
+                            <p class="client-para">Created a terminal-based movie recommendation system using content
+                                filtering for personalized suggestions.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -682,12 +810,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 7">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/ScanDoc"><b>Scan-Doc</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/ScanDoc"><b>Scan-Doc</b></a>
+                                        </h3>
                                         <p class="client-para">A.I. Development</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Developed a document scanning tool using PyCharm, integrating OCR to extract and digitize text efficiently.</p>
+                            <p class="client-para">Developed a document scanning tool using PyCharm, integrating OCR to
+                                extract and digitize text efficiently.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -698,12 +829,15 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 8">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/AirClick"><b>Air-Click</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/AirClick"><b>Air-Click</b></a>
+                                        </h3>
                                         <p class="client-para">A.I. Application</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Built a gesture-controlled virtual mouse using OpenCV on PyCharm for hands-free system navigation.</p>
+                            <p class="client-para">Built a gesture-controlled virtual mouse using OpenCV on PyCharm for
+                                hands-free system navigation.</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -714,12 +848,32 @@
                                         <img src="assets/images/testimonial/client-img-1.jpg" alt="Project 9">
                                     </div> -->
                                     <div class="client-details">
-                                        <h3 class="client-title tmp-link-animation"><a href="https://github.com/VishuMittal004/fraud-detection"><b>Finance Buddy</b></a></h3>
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/fraud-detection"><b>Finance
+                                                    Buddy</b></a></h3>
                                         <p class="client-para">A.I. Tool</p>
                                     </div>
                                 </div>
                             </div>
-                            <p class="client-para">Developed a machine learning-based fraud detection system to identify suspicious transactions with high accuracy.</p>
+                            <p class="client-para">Developed a machine learning-based fraud detection system to identify
+                                suspicious transactions with high accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-testimonial-card-wrap project-card-bg-effect project-card-10">
+                            <div class="client-card-head">
+                                <div class="client-info">
+                                    <div class="client-details">
+                                        <h3 class="client-title tmp-link-animation"><a
+                                                href="https://github.com/VishuMittal004/SnapSensei"><b>SnapSensei</b></a>
+                                        </h3>
+                                        <p class="client-para">AI Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="client-para">This is a real-time computer vision project that detects and locks
+                                objects using YOLOv8, then delivers crisp AI-generated descriptions through voice and
+                                text.</p>
                         </div>
                     </div>
                 </div>
@@ -734,195 +888,190 @@
         </div>
     </section>
     <!-- tmp My Projects End -->
-<!-- Tpm My Skill Area Start -->
-<section class="my-skill-area-style-two plr--120 plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--70">
-    <div class="tpm-custom-box-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-6 col-lg-12 col-md-12">
-                    <div class="my-skill-area-left-content-wrap">
-                        <div class="section-head text-align-left">
-                            <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <span class="subtitle">My Skill Section</span>
+    <!-- Tpm My Skill Area Start -->
+    <section class="my-skill-area-style-two plr--120 plr_lg--30 plr_md--30 plr_sm--30 plr_mobile--15 mt--70">
+        <div class="tpm-custom-box-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-lg-12 col-md-12">
+                        <div class="my-skill-area-left-content-wrap">
+                            <div class="section-head text-align-left">
+                                <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <span class="subtitle">My Skill Section</span>
+                                </div>
+                                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Skills I
+                                    Gained</h2>
+                                <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Through hands-on
+                                    projects and learning, I've built the ability to design, develop, and refine digital
+                                    solutions. I solve complex problems, craft clean user experiences, and adapt quickly
+                                    to new tools and challenges.
+                                </p>
                             </div>
-                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Skills I Gained</h2>
-                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Through hands-on projects and learning, I've built the ability to design, develop, and refine digital solutions. I solve complex problems, craft clean user experiences, and adapt quickly to new tools and challenges.
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-xxl-6 col-lg-12 col-md-12">
-                    <div class="my-skill-card-style-two row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-html-48.png" alt="my-skill-icon">
+                    <div class="col-xxl-6 col-lg-12 col-md-12">
+                        <div class="my-skill-card-style-two row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-html-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">HTML</h3>
                                 </div>
-                                <h3 class="card-title">HTML</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-css-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-css-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">CSS</h3>
                                 </div>
-                                <h3 class="card-title">CSS</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-javascript-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-javascript-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Javascript</h3>
                                 </div>
-                                <h3 class="card-title">Javascript</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-react-100.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-react-100.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">React</h3>
                                 </div>
-                                <h3 class="card-title">React</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-next.js-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-next.js-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Next.js</h3>
                                 </div>
-                                <h3 class="card-title">Next.js</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-tailwindcss-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-tailwindcss-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Tailwind CSS</h3>
                                 </div>
-                                <h3 class="card-title">Tailwind CSS</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-c-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-c-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">C</h3>
                                 </div>
-                                <h3 class="card-title">C</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-c++-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-c++-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">C++</h3>
                                 </div>
-                                <h3 class="card-title">C++</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-python-48.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-python-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Python</h3>
                                 </div>
-                                <h3 class="card-title">Python</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-flutter-48.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">Flutter</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-google-firebase-console-48.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">Firebase</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-mysql-logo-48.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">MySQL</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-mongodb-24.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">MongoDB</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-cursor-ai-64.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">Cursor AI</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-visual-studio-48.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">Visual Studio</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-visual-studio-code-2019-48.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">VS Code</h3>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icon-01.png" alt="my-skill-icon">
-                                </div>
-                                <h3 class="card-title">Framer</h3>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icon-03.png" alt="my-skill-icon">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-mysql-logo-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">MySQL</h3>
                                 </div>
-                                <h3 class="card-title">Figma</h3>
                             </div>
-                        </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-mongodb-24.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">MongoDB</h3>
+                                </div>
+                            </div>
 
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-chatgpt-64.png" alt="my-skill-icon">
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-visual-studio-code-2019-48.png"
+                                            alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">VS Code</h3>
                                 </div>
-                                <h3 class="card-title">ChatGPT</h3>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1" style="display: flex; justify-content: center; align-items: center;">
-                                <div class="card-icon">
-                                    <img src="assets/images/icons/icons8-canva-48.png" alt="my-skill-icon">
+
+
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icon-03.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Figma</h3>
                                 </div>
-                                <h3 class="card-title">Canva</h3>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-canva-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Canva</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-git-48.png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">Git</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="my-skill-card tmp-scroll-trigger tmp-fade-in animation-order-1"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <div class="card-icon">
+                                        <img src="assets/images/icons/icons8-github-64 (1).png" alt="my-skill-icon">
+                                    </div>
+                                    <h3 class="card-title">GitHub</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Tpm My Skill Area End -->
+    </section>
+    <!-- Tpm My Skill Area End -->
     <!-- Tpm Get In touch start -->
     <section class="get-in-touch-area tmp-section-gapTop" style="margin-bottom: 80px;">
         <div class="container">
@@ -930,7 +1079,8 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5">
                         <div class="contact-inner">
-                            <div class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <div
+                                class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
                                 <span class="title-left">Get Ready To Create Great</span>
                             </div>
                             <ul class="ft-link v2">
@@ -938,7 +1088,7 @@
                                     <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
                                     <div class="ft-link-wrap">
                                         <h4 class="link-title">E-mail:</h4>
-                                        <a href="mailto:vipanshucareer@gmail.com">vipanshucareer@gmail.com</a>
+                                        <a href="mailto:vipanshumittal@gmail.com">vipanshumittal@gmail.com</a>
                                     </div>
                                 </li>
                                 <li class="tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-link-animation">
@@ -948,19 +1098,20 @@
                                         <a href="https://www.jiit.ac.in/">JIIT, Noida, INDIA.</a>
                                     </div>
                                 </li>
-                                                            <li class="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
-                                <span class="ft-icon"><i class="fa-solid fa-phone"></i></span>
-                                <div class="ft-link-wrap">
-                                    <h4 class="link-title">Contact:</h4>
-                                    <a href="tel:+918433401192">+91 8433401192</a>
-                                </div>
-                            </li>
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                                    <span class="ft-icon"><i class="fa-solid fa-phone"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">Contact:</h4>
+                                        <a href="tel:+918433401192">+91 8433401192</a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="contact-inner">
-                            <div class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <div
+                                class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
                                 <span class="title">GET IN TOUCH</span>
                             </div>
                             <div class="contact-form">
@@ -969,41 +1120,50 @@
                                     <div class="contact-form-wrapper row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input class="input-field" name="name" id="contact-name" placeholder="Your Name" type="text" required>
+                                                <input class="input-field" name="name" id="contact-name"
+                                                    placeholder="Your Name" type="text" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input class="input-field" name="phone" id="contact-phone" placeholder="Phone Number" type="text" inputmode="numeric" pattern="[0-9]{10,15}" required>
+                                                <input class="input-field" name="phone" id="contact-phone"
+                                                    placeholder="Phone Number" type="text" inputmode="numeric"
+                                                    pattern="[0-9]{10,15}" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input class="input-field" id="contact-email" name="email" placeholder="Your Email" type="email" required>
+                                                <input class="input-field" id="contact-email" name="email"
+                                                    placeholder="Your Email" type="email" required>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input class="input-field" type="text" id="subject" name="subject" placeholder="Subject">
+                                                <input class="input-field" type="text" id="subject" name="subject"
+                                                    placeholder="Subject">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <textarea class="input-field" placeholder="Your Message" name="message" id="contact-message" required></textarea>
+                                                <textarea class="input-field" placeholder="Your Message" name="message"
+                                                    id="contact-message" required></textarea>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-12">
                                             <div class="tmp-button-here">
-                                                <button class="tmp-btn hover-icon-reverse radius-round w-100" name="submit" type="submit" id="submit">
+                                                <button class="tmp-btn hover-icon-reverse radius-round w-100"
+                                                    name="submit" type="submit" id="submit">
                                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Connect Now</span>
-                                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                        <span class="btn-text">Connect Now</span>
+                                                        <span class="btn-icon"><i
+                                                                class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                        <span class="btn-icon"><i
+                                                                class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                                     </span>
                                                 </button>
                                             </div>
@@ -1021,7 +1181,7 @@
     </section>
     <!-- Tpm Get In touch End -->
 
-    
+
 
     <!-- progress area start -->
     <div class="scrollToTop" style="display: block;">
@@ -1035,18 +1195,27 @@
             <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
                 <use xlink:href="#wave"></use>
             </svg>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 20" style="display: none;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 560 20" style="display: none;">
                 <symbol id="wave">
-                    <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z" fill="#"></path>
-                    <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z" fill="#"></path>
-                    <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z" fill="#"></path>
-                    <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z" fill="#"></path>
+                    <path
+                        d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"
+                        fill="#"></path>
+                    <path
+                        d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"
+                        fill="#"></path>
+                    <path
+                        d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"
+                        fill="#"></path>
+                    <path
+                        d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"
+                        fill="#"></path>
                 </symbol>
             </svg>
 
         </div>
     </div>
-   
+
 
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/jquery-ui.min.js"></script>
@@ -1076,7 +1245,7 @@
     <script src="assets/js/contact-form-enhanced.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             emailjs.init("eGCpkL53Krefr1K-V");
         })();
     </script>
@@ -1085,12 +1254,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                                        <div class="social-link mb-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/file/d/1uH555QB0l9nUzrSJdLMihtaFIT9xnujd/view" title="Resume"><i class="fa-solid fa-file-lines"></i></a>
-                        <a href="https://www.instagram.com/_vipanshu_mittal/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/vipanshu-mittal-a65973334/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://x.com/VishuMitta29340" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://github.com/VishuMittal004" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <div class="social-link mb-4 d-flex justify-content-center">
+                        <a href="https://drive.google.com/file/d/1ijNzrXUGPQMiL1Ikf2AYTziKLoQyPWxV/view"
+                            title="Resume"><i class="fa-solid fa-file-lines"></i></a>
+                        <a href="https://www.instagram.com/_vipanshu_mittal/" title="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vipanshu-mittal-a65973334/" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/Vipanshu_Mittal/" title="LeetCode"><i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://www.naukri.com/code360/profile/vishumittal" title="Code360"><i
+                                class="fa-solid fa-laptop-code"></i></a>
+                        <a href="https://github.com/VishuMittal004" title="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                     <p>&copy; 2023 Vipanshu Mittal. All rights reserved.</p>
                 </div>
