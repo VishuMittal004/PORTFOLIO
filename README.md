@@ -1,4 +1,4 @@
-# Vipanshu Mittal's Portfolio Website
+# [Vipanshu Mittal's Portfolio Website](https://vipanshuportfolio.vercel.app/)
 
 ## Overview
 This is a modern, responsive portfolio website built for Vipanshu Mittal, showcasing his work as a freelancer specializing in Webflow development, Figma design, and Next.js projects. The website features a clean, professional design with both light and dark themes.
@@ -23,7 +23,7 @@ This is a modern, responsive portfolio website built for Vipanshu Mittal, showca
 - Animate.css
 
 ## Project Structure
-```
+
 inversweb.com/
 ├── product/
 │   └── html/
@@ -35,7 +35,6 @@ inversweb.com/
 │               ├── maps/
 │               ├── js/
 │               └── fonts/
-```
 
 ## Key Components
 1. **Header Section**
@@ -68,4 +67,4 @@ For any inquiries or collaboration opportunities, please reach out through the c
 
 ---
 
-*This portfolio website is designed and developed to showcase Vipanshu Mittal's professional work and skills in web development, software development, AI development and design.* 
+*This portfolio website is designed and developed to showcase Vipanshu Mittal's professional work and skills in web development, software development, AI development and design.*
