@@ -30797,7 +30797,8 @@ body.tmp-white-version .rpp-banner-two-area .banner-shape-two img {
 }
 
 body.tmp-white-version .banner-two-main-wrapper .banner-right-content .main-img::after {
-  display: none;
+  display: block;
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0) 75%, #060606 100%);
 }
 
 body.tmp-white-version .banner-two-main-wrapper .banner-right-content .main-img .logo-under-img-wrap .logo-under-img img {
