@@ -3,6 +3,14 @@
 
 <head>
     <style>
+        /* Ensure all page content renders above the particle canvas */
+        header, main, section, footer, .rpp-banner-two-area, .about-content-area, .resume-section,
+        .tmp-skill-area, .my-expertise-area, .clients-testimonial-area, .my-skill-area-style-two,
+        .get-in-touch-area, .footer, .scrollToTop {
+            position: relative;
+            z-index: 1;
+        }
+
         @media (max-width: 991px) {
             .header-content {
                 flex-wrap: wrap;
@@ -114,6 +122,9 @@
 
 <body>
 
+    <!-- Animated Particle Network Background -->
+    <canvas id="particle-network-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+
     <!-- tpm-header-area start -->
     <header class="tmp-header-area-start header-one header--sticky header--transparent">
         <div class="container">
@@ -190,7 +201,7 @@
                         <div class="banner-right-content">
                             <div class="main-img">
                                 <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                                    src="assets/images/banner/mainp.png" alt="banner-img">
+                                    src="assets/images/banner/main3.png" alt="banner-img">
                                 <h2 class="banner-big-text-1 up-down-2">Developer</h2>
                                 <h2 class="banner-big-text-2 up-down">Developer</h2>
                                 <div class="benner-two-bg-red-img">
@@ -1273,6 +1284,180 @@
             </div>
         </div>
     </footer>
+
+    <!-- Background Animation Script: particles + vertical beams + starfield -->
+    <script>
+    (function() {
+        const canvas = document.getElementById('particle-network-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let W = window.innerWidth;
+        let H = window.innerHeight;
+        canvas.width = W;
+        canvas.height = H;
+
+        window.addEventListener('resize', () => {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+            initParticles(); initStars(); initBeams();
+        });
+
+        const COLORS = ['#e53935','#ff6f61','#ff8a65','#ef9a9a','#c62828'];
+        let mouse = { x: -9999, y: -9999 };
+        document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+        document.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+        function rand(a, b) { return a + Math.random() * (b - a); }
+
+        /* ── 1. STARFIELD ───────────────────────────────────────────────── */
+        let stars = [];
+        function initStars() {
+            stars = [];
+            const n = Math.floor((W * H) / 5000);
+            for (let i = 0; i < n; i++) {
+                stars.push({ x: rand(0,W), y: rand(0,H), r: rand(0.3,1.1),
+                    alpha: rand(0.08,0.45), spd: rand(0.003,0.012), dir: Math.random()>0.5?1:-1 });
+            }
+        }
+        initStars();
+        function drawStars() {
+            stars.forEach(s => {
+                s.alpha += s.spd * s.dir;
+                if (s.alpha > 0.45) { s.alpha = 0.45; s.dir = -1; }
+                if (s.alpha < 0.04) { s.alpha = 0.04; s.dir =  1; }
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255,255,255,' + s.alpha + ')';
+                ctx.fill();
+            });
+        }
+
+        /* ── 2. VERTICAL LIGHT BEAMS ────────────────────────────────────── */
+        const BEAM_X = [0.32, 0.50, 0.68];
+        let beams = [];
+        function makeBeam(fi) {
+            const tl = rand(H * 0.35, H * 0.65);
+            return { x: W * BEAM_X[fi] + rand(-18,18), y: rand(-H, 0),
+                tailLen: tl, speed: rand(1.2, 2.2), w: rand(1.0, 1.8),
+                gw: rand(8, 20), fi: fi,
+                r: Math.floor(rand(220,255)), g: Math.floor(rand(180,230)),
+                b: Math.floor(rand(180,220)), op: rand(0.55, 0.95) };
+        }
+        function initBeams() {
+            beams = [0,1,2].map(i => makeBeam(i));
+            beams[0].y = rand(-H*0.6,  H*0.2);
+            beams[1].y = rand(-H*0.3,  H*0.5);
+            beams[2].y = rand(-H*0.9, -H*0.1);
+        }
+        initBeams();
+        function drawBeams() {
+            beams.forEach(b => {
+                const hY = b.y, tY = b.y - b.tailLen;
+                const rgb = b.r+','+b.g+','+b.b;
+
+                /* outer glow */
+                /*const gg = ctx.createLinearGradient(b.x, tY, b.x, hY);
+                gg.addColorStop(0,   'rgba('+rgb+',0)');
+                gg.addColorStop(0.6, 'rgba('+rgb+','+(b.op*0.08).toFixed(3)+')');
+                gg.addColorStop(1,   'rgba('+rgb+','+(b.op*0.22).toFixed(3)+')');
+                ctx.save();
+                ctx.beginPath(); ctx.rect(b.x - b.gw, tY, b.gw*2, b.tailLen);
+                ctx.fillStyle = gg; ctx.fill(); ctx.restore();*/
+
+                /* core line */
+                // const lg = ctx.createLinearGradient(b.x, tY, b.x, hY);
+                // lg.addColorStop(0,    'rgba('+rgb+',0)');
+                // lg.addColorStop(0.5,  'rgba('+rgb+','+(b.op*0.35).toFixed(3)+')');
+                // lg.addColorStop(0.85, 'rgba('+rgb+','+(b.op*0.80).toFixed(3)+')');
+                // lg.addColorStop(1,    'rgba(255,255,255,'+b.op.toFixed(3)+')');
+                // ctx.save();
+                // ctx.beginPath(); ctx.moveTo(b.x,tY); ctx.lineTo(b.x,hY);
+                // ctx.strokeStyle = lg; ctx.lineWidth = b.w;
+                // ctx.shadowColor = 'rgba('+rgb+',0.9)'; ctx.shadowBlur = 8;
+                // ctx.stroke(); ctx.restore();
+
+                // b.y += b.speed;
+                // if (b.y - b.tailLen > H) {
+                //     const nb = makeBeam(b.fi); nb.y = -rand(20,60);
+                //     Object.assign(b, nb);
+                // }
+            });
+        }
+
+        /* ── 3. BOTTOM GLOW ─────────────────────────────────────────────── */
+        function drawBottomGlow() {
+            const cx = W*0.5, cy = H*1.05, radius = Math.max(W*0.45, H*0.38);
+            const grad = ctx.createRadialGradient(cx,cy,0,cx,cy,radius);
+            grad.addColorStop(0,   'rgba(80,20,20,0.18)');
+            grad.addColorStop(0.4, 'rgba(50,10,10,0.10)');
+            grad.addColorStop(1,   'rgba(0,0,0,0)');
+            ctx.save();
+            ctx.beginPath(); ctx.arc(cx, cy, radius, 0, Math.PI*2);
+            ctx.fillStyle = grad; ctx.fill(); ctx.restore();
+        }
+
+        /* ── 4. PARTICLE NETWORK ────────────────────────────────────────── */
+        let particles = [];
+        function initParticles() {
+            const n = Math.min(Math.floor((W*H)/14000), 110);
+            particles = [];
+            for (let i = 0; i < n; i++) particles.push({
+                x: rand(0,W), y: rand(0,H),
+                vx: rand(-0.35,0.35), vy: rand(-0.35,0.35),
+                r: rand(1.2,2.8),
+                color: COLORS[Math.floor(Math.random()*COLORS.length)],
+                alpha: rand(0.30,0.75)
+            });
+        }
+        initParticles();
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i+1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const d = Math.sqrt(dx*dx + dy*dy);
+                    if (d < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = 'rgba(229,57,53,'+ ((1-d/150)*0.22).toFixed(3) +')';
+                        ctx.lineWidth = 0.6; ctx.stroke();
+                    }
+                }
+                const md = Math.hypot(particles[i].x - mouse.x, particles[i].y - mouse.y);
+                if (md < 180) {
+                    ctx.beginPath();
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(mouse.x, mouse.y);
+                    ctx.strokeStyle = 'rgba(255,111,97,'+ ((1-md/180)*0.55).toFixed(3) +')';
+                    ctx.lineWidth = 0.9; ctx.stroke();
+                }
+            }
+        }
+        function tickParticles() {
+            particles.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.x < -10) p.x = W+10; if (p.x > W+10) p.x = -10;
+                if (p.y < -10) p.y = H+10; if (p.y > H+10) p.y = -10;
+                ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+                ctx.fillStyle = p.color; ctx.globalAlpha = p.alpha;
+                ctx.fill(); ctx.globalAlpha = 1;
+            });
+        }
+
+        /* ── RENDER LOOP ────────────────────────────────────────────────── */
+        function animate() {
+            ctx.clearRect(0, 0, W, H);
+            drawStars();
+            drawBottomGlow();
+            drawBeams();
+            connectParticles();
+            tickParticles();
+            requestAnimationFrame(animate);
+        }
+        animate();
+    })();
+    </script>
+
 </body>
 
 </html>
